@@ -11,7 +11,7 @@ endpoint for an external monitoring service. External monitoring service
 can check this endpoint, if a failure is detected, then send a
 notification to Slack/Mattermost or other instant messenger.
 
-**Example of an endpoint for externl monitoring:**
+**Example of an endpoint for external monitoring:**
 
 ```json
 {
@@ -92,6 +92,14 @@ ready to use commands to clean up what is needed.
 ```bash
 docker image prune
 docker container prune
+```
+
+If there is still not much disk space, then try `ncdu` to inspect it
+deeply.
+
+```bash
+# be very careful to not delete important files with ncdu
+sudo ncdu /
 ```
 
 After that you can bring back the services.
