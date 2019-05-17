@@ -117,3 +117,9 @@ If the REDIS server is used only for caching purposes, not for storing
 important data - then you can just delete the REDIS data if it is
 corrupted after unexpectedly killed process.
 
+##### 4. Monitoring logs
+
+```bash
+journalctl --since "20 min ago"
+journalctl -u project.service
+```
