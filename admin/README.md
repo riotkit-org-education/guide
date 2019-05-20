@@ -92,6 +92,8 @@ ready to use commands to clean up what is needed.
 ```bash
 docker image prune
 docker container prune
+
+# NOTICE: please do not prune volumes, it is considered very risky!
 ```
 
 If there is still not much disk space, then try `ncdu` to inspect it
@@ -119,7 +121,10 @@ corrupted after unexpectedly killed process.
 
 ##### 4. Monitoring logs
 
+Use standard systemd journal to monitor live the application.
+
 ```bash
 journalctl --since "20 min ago"
-journalctl -u project.service
+journalctl -u project.service -f
+journalctl -u project.service -f --since "20 min ago"
 ```
