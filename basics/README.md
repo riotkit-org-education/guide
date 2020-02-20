@@ -12,6 +12,7 @@ Basics of RiotKit's structure
 - Technical things that can grow in time does not have impact on other services
 - Different servers can be sub-managed or payed by other people or organizations
 - In cases like files storage it's worth to have a second server that is a mirror copy of the first, but in other location
+- Storage consuming applications can be running on a host with cheaper storage, cpu consuming applications on a hosting with cheaper cpu plans
 
 ### Everything in the repository (Infrastructure as a Code)
 
