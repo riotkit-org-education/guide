@@ -128,3 +128,7 @@ journalctl --since "20 min ago"
 journalctl -u project.service -f
 journalctl -u project.service -f --since "20 min ago"
 ```
+
+## Maintaining backup server
+
+To be done.
